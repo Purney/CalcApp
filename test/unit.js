@@ -23,3 +23,10 @@ suite("Test coin flip", function() {
   });
 
 });
+
+
+suite("Test Add Numbers", function() {
+
+  test("Test Adding Numbers");
+
+});
