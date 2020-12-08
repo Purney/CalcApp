@@ -27,6 +27,15 @@ suite("Test coin flip", function() {
 
 suite("Test Add Numbers", function() {
 
-  test("Test Adding Numbers");
+  test("Test Adding Numbers" , function (){
+    let firstNumber = [1,2,3,4,5];
+    let secondNumber = [1,2,3,4,5];
+    let answers = [2,4,6,8,10];
+
+    for (var i = 0; i < answers.length; i++)
+    {
+      chai.assert.equal(logic.addNumbers(firstNumber[i], secondNumber[i]),answers[i], "Add Calculation was incorrect");
+    }
+  });
 
 });
